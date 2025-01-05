@@ -1,3 +1,5 @@
+# [1, 2, 1, 2, 1, 1, 1]
+
 class Solution:
     def maxLength(self, nums: List[int]) -> int:
         N= len(nums)
