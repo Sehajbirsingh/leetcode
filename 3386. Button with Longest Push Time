@@ -1,0 +1,12 @@
+longest_time = 0
+        button_index = events[0][0]
+        previous_time = 0
+        
+        for index, time in events:
+            time_taken = time - previous_time
+            if time_taken > longest_time or (time_taken == longest_time and index < button_index):
+                longest_time = time_taken
+                button_index = index
+            previous_time = time
+        
+        return button_index
